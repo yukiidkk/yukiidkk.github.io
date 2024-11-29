@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="source/linux.gif" />
+    <link rel="stylesheet" type="text/css" href="stile.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Parkinsans:wght@300..800&display=swap" 
+rel="stylesheet">3
+    />
+    <title>Unidad 2</title>
+  </head>
+  <body>
+    <header>
+      <div>
+        <div class="tituloindice">Unidad 2: Arquitectura de computadoras</div>
+        <nav class="style1 efecto bloque">
+          <a href="index.html">Principal</a>
+          <a href="Unidad 1.html">Unidad 1</a>
+          <a href="#INDICE" class="ÍNDICE">indice</a>
+          <a href="Unidad 3.html">Unidad 3</a>
+          <a href="Unidad 4.html">Unidad 4</a>
+        </nav>
+      </div>
+    </header>
+
+    <section class="separador" id="ÍNDICE">
+      <div class="d-flex">
+        <div class="col-1">
+          <h1 align="center">ÍNDICE</h1>
+          <img
+            src="imagenes/imagen6.webp"
+            alt="img2"
+            title="compu"
+            class="imagenPe"
+          />
+        </div>
+        <div class="col-2 artacomodo indice">
+          <ul>
+            <li>
+              <a href="#2.1 Organización del Procesador" class="indice">
+                2.1 Organización del Procesador
+              </a>
+            </li>
+            <li>
+              <a href="#2.2 Estructura de Registros" class="indice">
+                2.2 Estructura de Registros
+              </a>
+              <ul>
+                <li>
+                  <a
+                    href="#2.2.1 Registros visibles para el usuario."
+                    class="indice"
+                  >
+                    2.2.1 Registros visibles para el usuario.
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#2.2.2 Registros de control y de estados."
+                    class="indice"
+                  >
+                    2.2.2 Registros de control y de estados.
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#2.2.3 Ejemplo de Registros de CPU reales."
+                    class="indice"
+                  >
+                    2.2.3 Ejemplo de Registros de CPU reales.
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#2.3 El ciclo de instrucción" class="indice">
+                2.3 El ciclo de instrucción
+              </a>
+              <ul>
+                <li>
+                  <a
+                    href="#2.3.1 Ciclo FETCH - DECODE - EXECUTE"
+                    class="indice"
+                  >
+                    2.3.1 Ciclo FETCH - DECODE - EXECUTE
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#2.3.2 Segmentación de instrucciones."
+                    class="indice"
+                  >
+                    2.3.2 Segmentación de instrucciones.
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#2.3.3 Conjunto de Instrucciones, características y funciones."
+                    class="indice"
+                  >
+                    2.3.3 Conjunto de Instrucciones, características y
+                    funciones.
+                  </a>
+                </li>
+                <li>
+                  <a href="#2.3.4 Modos de direccionamiento." class="indice">
+                    2.3.4 Modos de direccionamiento.
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#2.4 Casos de estudio de CPU reales" class="indice">
+                2.4 Casos de estudio de CPU reales
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="d-flex">
+        <div class="artacomodo col-2">
+          <article>
+            <h2 id="2.1 Organización del Procesador">
+              2.1 Organización del Procesador
+            </h2>
+            <h4>¿Qué es?</h4>
+            La Unidad de Procesamiento (CPU) controla el funcionamiento del
+            computador y lleva a cabo sus funciones de procesamiento de datos.
+            Frecuentemente se le llama procesador. Un procesador, incluye tanto
+            registros visibles por el usuario como registros de control/estado.
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="d-flex">
+        <div class="artacomodo col-2">
+          <article>
+            <h2 id="2.2 Estructura de Registros">
+              2.2 Estructura de Registros
+            </h2>
+            <h4>¿Qué es?</h4>
+            Un registro es una memoria que esta ubicada en el procesador y se
+            encuentra en el nivel más alto en la jerarquía de memoria, por lo
+            tanto tiene una alta velocidad pero con poca capacidad para
+            almacenar datos que va desde los 4 bits hasta los 64 bits
+            dependiendo del procesador que se utilice. Los datos que almacena
+            son los que se usan frecuentemente.
+            <h4 id="2.2.1 Registros visibles para el usuario.">
+              2.2.1 Registros visibles para el usuario.
+            </h4>
+            <h4>¿Qué es?</h4>
+            Un registro visible al usuario es aquél que puede ser referenciado
+            por medio del lenguaje máquina que ejecuta la CPU. <br />
+            <br />
+            Permiten al programador de lenguaje máquina o de ensamblador
+            minimizar las referencias a memoria principal por medio de la
+            optimización del uso de registros.
+            <h4>Clasificación</h4>
+            <ul>
+              <li>Uso General.</li>
+              <li>Datos.</li>
+              <li>Direcciones.</li>
+              <li>Códigos de Condición.</li>
+              <li>Índice.</li>
+              <li>Segmento.</li>
+              <li>Apuntadores.</li>
+              <li>Banderas.</li>
+              <li>Instrucción.</li>
+              <li>Control y Estado.</li>
+            </ul>
+
+            <h4 id="2.2.2 Registros de control y de estados.">
+              2.2.2 Registros de control y de estados.
+            </h4>
+            Son utilizados por la unidad de control para controlar el
+            funcionamiento del procesador y por programas privilegiados del
+            sistema operativo para controlar la ejecución de programas. Hay
+            diversos registros del procesador que se emplean para controlar su
+            funcionamiento.
+
+            <h4 id="2.2.3 Ejemplo de Registros de CPU reales.">
+              2.2.3 Ejemplo de Registros de CPU reales.
+            </h4>
+            <img src="imagenes/imagen7.gif" alt="Ejemplo1.CPU" />
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="d-flex">
+        <div class="artacomodo col-2">
+          <article>
+            <h2 id="2.3 El ciclo de instrucción">
+              2.3 El ciclo de instrucción
+            </h2>
+            <h4>¿Qué es?</h4>
+            Es también llamado ciclo de fetch-and-execute o ciclo de
+            fetchdecode-execute es el período que tarda la unidad central de
+            proceso (CPU) en ejecutar una instrucción de lenguaje máquina. Cada
+            instrucción del juego de instrucciones de una CPU puede requerir
+            diferente número de ciclos de instrucción para su ejecución. Un
+            ciclo de instrucción está formado por uno o más ciclos máquina.
+
+            <h4 id="2.3.1 Ciclo FETCH - DECODE - EXECUTE">
+              2.3.1 Ciclo FETCH - DECODE - EXECUTE
+            </h4>
+
+            <li>
+              1. BUSCAR LA INSTRUCCIÓN EN LA MEMORIA PRINCIPAL
+              <ul>
+                <li>
+                  La CPU pasa la instrucción de la memoria principal a través
+                  del bus de datos al Registro de Datos de Memoria (MDR).
+                </li>
+                <li>
+                  El valor del MDR es colocado en el Registro de Instrucción
+                  Actual (CIR), un circuito que guarda la instrucción
+                  temporalmente de manera que pueda ser decodificada y
+                  ejecutada.
+                </li>
+              </ul>
+            </li>
+            <li>
+              2. DECODIFICAR LA INSTRUCCIÓN
+              <ul>
+                <li>
+                  El decodificador de instrucción interpreta e implementa la
+                  instrucción.
+                </li>
+                <li>
+                  El registro de instrucción (IR) mantiene la instrucción en
+                  curso mientras el contador de programa (PC, program counter)
+                  guarda la dirección de memoria de la siguiente instrucción a
+                  ser ejecutada.
+                </li>
+                <li>
+                  Se lee la dirección efectiva de la memoria principal si la
+                  instrucción tiene una dirección indirecta.
+                </li>
+              </ul>
+            </li>
+            <li>
+              3. EJECUTAR LA INSTRUCCIÓN
+              <ul>
+                <li>
+                  A partir del registro de instrucción, los datos que forman la
+                  instrucción son decodificados por la unidad de control.
+                </li>
+                <li>
+                  Ésta interpreta la información como una secuencia de señales
+                  de control que son enviadas a las unidades funcionales
+                  relevantes de la CPU para realizar la operación requerida por
+                  la instrucción.
+                </li>
+              </ul>
+            </li>
+            <li>
+              4. ALMACENAR O GUARDAR RESULTADOS
+              <ul>
+                <li>
+                  El resultado generado por la operación es almacenado en la
+                  memoria principal o enviado a un dispositivo de salida
+                  dependiendo de la instrucción.
+                </li>
+                <li>
+                  Basándose en los resultados de la operación, el contador de
+                  programa se incrementa para apuntar a la siguiente instrucción
+                  o se actualiza con una dirección diferente.
+                </li>
+              </ul>
+            </li>
+
+            <h4 id="2.3.2 Segmentación de instrucciones.">
+              2.3.2 Segmentación de instrucciones.
+            </h4>
+
+            <ul>
+              <li>
+                Es una técnica que permite implementar el paralelismo a nivel de
+                instrucción en un único procesador. La segmentación intenta
+                tener ocupadas con instrucciones todas las partes del
+                procesador, dividiendo las instrucciones en una serie de pasos
+                secuenciales que efectuarán distintas unidades de la CPU,
+                tratando en paralelo diferentes partes de las instrucciones.
+                Permite una mayor tasa de transferencia efectiva por parte de la
+                CPU .
+              </li>
+              <li>
+                El número de pasos dependientes varían según la arquitectura de
+                la máquina. •La segmentación RISC clásica comprende:
+                <ul>
+                  <li>1. Lectura de instrucción</li>
+                  <li>
+                    2. Decodificación de instrucción y lectura de registro
+                  </li>
+                  <li>3. Ejecución</li>
+                  <li>4. Acceso a memoria</li>
+                  <li>5. Escritura de vuelta en el registro</li>
+                </ul>
+              </li>
+              <li>
+                Conforme la segmentación se hace más "profunda" (aumentando el
+                número de pasos dependientes), un paso determinado puede
+                implementarse con circuitería más simple, lo cual puede permitir
+                que el reloj del procesador vaya más rápido. En inglés, las
+                segmentaciones de este tipo pueden llamarse superpipelines. Se
+                dice que un procesador está totalmente segmentado si puede leer
+                una instrucción en cada ciclo. Por lo tanto, si ciertas
+                instrucciones o condiciones requieren un retardo que impide la
+                lectura de nuevas instrucciones, el procesador no está
+                totalmente segmentado.
+              </li>
+            </ul>
+            <h4
+              id="2.3.3 Conjunto de Instrucciones, características y funciones."
+            >
+              2.3.3 Conjunto de Instrucciones, características y funciones.
+            </h4>
+
+            <li>
+              El conjunto de instrucciones de un computador debe ser completo en
+              el sentido de que se pueda construir un programa para evaluar una
+              función computable usando una cantidad de memoria razonable y
+              empleando un tiempo moderado, es decir, el número de instrucciones
+              de ese programa no debe ser demasiado elevado.
+            </li>
+            <li>
+              qLos juegos de instrucciones también tienen que ser eficientes,
+              esto significa que las funciones más necesarias deben poder
+              realizarse usando pocas instrucciones.
+            </li>
+            <li>
+              qEl conjunto de instrucciones de una máquina debe ser regular, es
+              decir debe ser simétrico (por ejemplo, si existe una instrucción
+              de desplazamiento a la izquierda, debe haber otra de
+              desplazamiento a la derecha, etc.) y ortogonal, es decir, deben
+              poder combinarse, en la medida de lo posible, todos las
+              operaciones con todos los tipos de datos y modos de
+              direccionamiento.
+            </li>
+            <li>
+              En muchas ocasiones, también se le debe exigir a un computador que
+              su juego de instrucciones sea compatible con modelos anteriores.
+            </li>
+            <h4 id="2.3.4 Modos de direccionamiento.">
+              2.3.4 Modos de direccionamiento.
+            </h4>
+            Son las diferentes maneras de especificar un operando dentro de una
+            instrucción. Un modo de direccionamiento especifica la forma de
+            calcular la dirección de memoria efectiva de un operando mediante el
+            uso de la información contenida en registros dentro de una
+            instrucción de la máquina.
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="d-flex">
+        <div class="artacomodo col-2">
+          <article>
+            <h2 id="2.4 Casos de estudio de CPU reales">
+              2.4 Casos de estudio de CPU reales
+            </h2>
+            En informática, los modos de direccionamiento son las diferentes
+            maneras de especificar un operando dentro de una instrucción en
+            lenguaje ensamblador. Un modo de direccionamiento especifica la
+            forma de calcular la dirección de memoria efectiva de un operando
+            mediante el uso de la información contenida en registros y/o
+            constantes, contenida dentro de una instrucción de la máquina o en
+            otra parte. No existe una forma generalmente aceptada de nombrar a
+            los distintos modos de direccionamiento. En particular, los
+            distintos autores y fabricantes de equipos pueden dar nombres
+            diferentes para el modo de hacer frente al mismo, o los mismos
+            nombres, a los diferentes modos de direccionamiento. Además, un modo
+            de direccionamiento que en una determinada arquitectura se trata
+            como un modo de direccionamiento, puede representar la funcionalidad
+            que en otra arquitectura está cubierto por dos o más modos de
+            direccionamiento.
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <h4>Alumna Alejandra Muñoz Ríos</h4>
+      <nav class="style1 efecto bloque">
+        <a href="#">Regresar arriba</a>
+        <a
+          href="https://drive.google.com/drive/folders/1V86xLtCIPa5StEz9SxGC2eQmZBswaHoP?usp=sharing"
+          >Prácticas</a
+        >
+        <a href="https://saltillo.tecnm.mx">Tecnológico de Saltillo</a>
+        <a href="https://www.tecnm.mx">Tecnológico Nacional de México</a>
+      </nav>
+         </footer>
+  </body>
+</html>

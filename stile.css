@@ -1,0 +1,120 @@
+/*
+Cosas base para textos e imagenes en general
+*/
+
+body{
+    margin: 10;
+    background-color: #63707d;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 0px;
+    margin: 0px;
+}
+
+header {
+    background-color: #355354;
+    padding: 1em 0;
+    text-align: center;
+    letter-spacing: 0.2em;
+    margin-bottom: 1em;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+footer {
+    background-color: #355354;
+    color: #c3e3f1;
+    padding: 1em 0;
+    text-align: center;
+    margin-top: auto;
+}
+
+section{
+  background-color: #476d6e;
+  margin-bottom: 20px;
+  color: #c3e3f1;
+}
+
+.separador{
+  padding-top: 150px;
+}
+.indice{
+  color: #c3e3f1;
+}
+
+.tituloindice{
+    font-family: "DotGothic16", sans-serif;
+    text-align: center;
+    color: #c3e3f1;
+    font-size: 250%;
+    margin-left: 25px;
+    text-decoration: none; 
+    text-transform: uppercase;
+    padding: 5px 5px;
+}
+
+.bloque{
+    display: flex;
+}
+
+.col-1 {
+    padding:2rem;
+    margin:1rem;
+    }
+.col-2{
+    padding:1rem;
+    margin:1rem;
+    background-color: #355354;
+    border: 5px solid #63707d;
+    border-radius: 50px;
+  }
+  .main-a {
+    background-color: #1b1c26;
+  color:white;
+  }
+  .d-flex{
+    display:flex;
+  }
+.imagen{
+    display:inline-block;
+    height:300px;
+    border: 5px solid #63707d;
+    border-radius: 50px;
+  }
+
+  .imagenPe{
+    display:inline-block;
+    height:175px;
+    border: 5px solid #63707d;
+    border-radius: 50px;
+  }
+
+  .conejo{
+    height:50px;
+    padding: 5px;
+  }
+
+  .artacomodo{
+    text-align: justify;
+  }
+.efecto a {
+    font-family: "DotGothic16", sans-serif;
+    color: #ffffff;
+    border: 1.2px solid #ffffff;
+    border-radius: 4px;
+    cursor: pointer;
+    height: 20px;
+    width: 20%;
+    font-size: 17px;
+    text-align: center;
+    transition: all 0.2s ease-in-out;
+    margin: 10px;
+    padding: 5px 5px;
+    text-decoration: none;
+}
+.style1 a:hover {
+    box-shadow: 1px 1px #63707d, 6px 6px #63707d, 3px 3px #63707d;
+    transform: translateX(-3px);;
+    }

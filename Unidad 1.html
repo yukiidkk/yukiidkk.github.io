@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="source/linux.gif" />
+    <link rel="stylesheet" type="text/css" href="stile.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Parkinsans:wght@300..800&display=swap" 
+rel="stylesheet">3
+    />
+    <title>Unidad 1</title>
+  </head>
+  <body>
+    <header>
+      <div>
+        <div class="tituloindice">Unidad 1: Arquitectura de computadoras</div>
+        <nav class="style1 efecto bloque">
+          <a href="index.html">Principal</a>
+          <a href="#INDICE" class="INDICE">indice</a>
+          <a href="Unidad 2.html">Unidad 2</a>
+          <a href="Unidad 3.html">Unidad 3</a>
+          <a href="Unidad 4.html">Unidad 4</a>
+        </nav>
+      </div>
+    </header>
+
+    <section class="separador" id="ÍNDICE">
+      <div class="d-flex">
+        <div class="col-1">
+          <h1 align="center">ÍNDICE</h1>
+          <img
+            src="imagenes/imagen2.jpg"
+            alt="img2"
+            title="compu"
+            class="imagen"
+          />
+        </div>
+        <div class="col-2 artacomodo indice">
+          <ul>
+            <li>
+              <a href="#1.1 Modelos de Arquitectura" class="indice"
+                >1.1 Modelos de Arquitectura</a
+              >
+              <ul>
+                <li>
+                  <a href="#1.1.1 Clásicas" class="indice">1.1.1 Clásicas</a>
+                </li>
+                <li>
+                  <a href="#1.1.2 Segmentadas" class="indice"
+                    >1.1.2 Segmentadas</a
+                  >
+                </li>
+                <li>
+                  <a href="#1.1.3 De multiprocesamiento" class="indice"
+                    >1.1.3 De multiprocesamiento</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="#1.2 Analisis de componentes" class="indice"
+                >1.2 Analisis de componentes</a
+              >
+              <ul>
+                <li>
+                  <a href="#1.2.1 Arquitectura" class="indice"
+                    >1.2.1 Arquitectura</a
+                  >
+                  <ul>
+                    <li>
+                      <a
+                        href="#1.2.1.1 Unidad Central de Procesamiento (CPU)"
+                        class="indice"
+                        >1.2.1.1 Unidad Central de Procesamiento (CPU)</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#1.2.1.2 Unidad Aritmética Lógica" class="indice"
+                        >1.2.1.2 Unidad Aritmética Lógica</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#1.2.1.3 Registros" class="indice"
+                        >1.2.1.3 Registros</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#1.2.1.4 Buses" class="indice">1.2.1.4 Buses</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <a href="#1.2.2 Memorias" class="indice">1.2.2 Memorias</a>
+                  <ul>
+                    <li>
+                      <a
+                        href="#1.2.2.1 Conceptos básicos del manejo de memoria"
+                        class="indice"
+                        >1.2.2.1 Conceptos básicos del manejo de memoria</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#1.2.2.2 Memoria principal" class="indice"
+                        >1.2.2.2 Memoria principal</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#1.2.2.3 Memoria caché" class="indice"
+                        >1.2.2.3 Memoria caché</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <a href="#1.2.3 Manejo de entrada/salida" class="indice"
+                    >1.2.3 Manejo de entrada/salida</a
+                  >
+                  <ul>
+                    <li>
+                      <a
+                        href="#1.2.3.1 Modulos de entrada/salida"
+                        class="indice"
+                        >1.2.3.1 Modulos de entrada/salida</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#1.2.3.2 entrada/salida programada"
+                        class="indice"
+                        >1.2.3.2 entrada/salida programada</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#1.2.3.3 entrada/salida mediante interrupciones"
+                        class="indice"
+                        >1.2.3.3 entrada/salida mediante interrupciones</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#1.2.3.4 Acceso directo a memoria" class="indice"
+                        >1.2.3.4 Acceso directo a memoria</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#1.2.3.5 Canales y procesadores de entrada/salida"
+                        class="indice"
+                        >1.2.3.5 Canales y procesadores de entrada/salida</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="d-flex">
+        <div class="artacomodo col-2">
+          <article>
+            <h1 id="1.1 Modelos de Arquitectura">
+              1.1 Modelos de Arquitectura
+            </h1>
+            <h2 id="1.1.1 Clásicas">1.1.1 Clasicas</h2>
+            Fueron desarrolladas en las primeras computadoras electromecánicas y
+            de tubos de vacío. Aún se usan en procesadores empotrados de gama
+            baja y son la base de la mayoría de arquitecturas modernas.
+            <ul>
+              <h4>Arquitectura Mauchly-Eckert (Von Newman)</h4>
+              <li>
+                Usada en la computadora ENIAC. Consiste en una unidad central de
+                proceso que se comunica a través de un solo bus con un banco de
+                memoria donde se almacenan los códigos de instrucción del
+                programa y los datos que procesará.
+              </li>
+              <li>
+                Esta arquitectura es la que más se emplea en la actualidad ya
+                que, es muy versátil. Un ejemplo de esta versatilidad es el
+                funcionamiento de los compiladores.
+              </li>
+              <li>
+                Su desventaja es que el bus de datos y direcciones único se
+                convierte en un cuello de botella por el que pasa toda la
+                información que se lee o escribe a la memoria, obligando que los
+                accesos a esta sean secuenciales. Limita el grado de
+                paralelismo.
+              </li>
+              <li>
+                En esta arquitectura apareció por primera vez el concepto de
+                programa almacenado. En esta arquitectura, se asigna un código
+                numérico a cada instrucción. Los códigos se almacenan en la
+                misma unidad de memoria que los datos a procesar.
+              </li>
+              <li>
+                El procesador se subdivide en una Unidad de Control (C.U.),
+                Unidad Lógica Aritmética (A.L.U.) y una Serie de Registros.
+              </li>
+              <h4>Arquitectura Harvard</h4>
+              <li>
+                Surgió en la universidad del mismo nombre, poco después de la
+                arquitectura Von Newman apareciera en la universisdad de
+                Princeton.
+              </li>
+              <li>
+                Al igual que en a arquitectura Von Newman, el programa se
+                almacena como un código numérico en la memoria, pero no en el
+                mismo espacio de memoria ni en el mismo formato que los datos.
+              </li>
+              <li>
+                El hecho de tener un bus separado para el programa y otro para
+                los datos, permite que se lea el código de operación de una
+                instrucción, al mismo tiempo se lee de la memoria de datos de
+                los operados de la instrucción previa.
+              </li>
+              <li>
+                En la actualidad la mayoría de los procesadores modernos se
+                conectan al exterior de manera similar a la arquitectura Von
+                Newman, con un banco de memoria masivo único.
+              </li>
+              <li>
+                Pero internamente incluyen varios niveles de memoria caché con
+                bancos separados en caché de programa y caché de datos, buscando
+                un mejor desempeño sin perder la versatilidad.
+              </li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="d-flex">
+        <div class="artacomodo col-2">
+          <article>
+            <h2 id="1.1.2 Segmentadas">1.1.2 Segmentadas</h2>
+            La arquitectura segmentada en computadoras representa un enfoque innovador para optimizar el uso de recursos, tanto en memoria como en procesamiento. En el ámbito de la memoria, la segmentación divide el espacio en bloques lógicos independientes, como el código, los datos y la pila. Esto no solo permite una mejor organización, sino que también mejora la seguridad del sistema al evitar que un segmento interfiera con otro. Cada segmento cuenta con un identificador y un desplazamiento, lo que simplifica la asignación y el acceso a los recursos, incluso en sistemas complejos. <br />
+            <br />
+           En resumen, la arquitectura segmentada se fundamenta en la división estratégica de tareas y recursos, buscando un equilibrio entre rendimiento y organización. Este modelo se ha convertido en un pilar fundamental para el diseño de sistemas modernos, respondiendo a la creciente demanda de rapidez y robustez en la computación. <br />
+            <br />
+            <br />
+
+            <img src="imagenes/imagen3.jpg" alt="ejemplo1" /> <br />
+            <br />
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="d-flex">
+        <div class="artacomodo col-2">
+          <article>
+            <h2 id="1.1.3 De multiprocesamiento">
+              1.1.3 De multiprocesamiento
+            </h2>
+            Cuando se desea incrementar el desempeño más allá de lo que permite
+            la técnica de segmentación del cauce, se requiere utilizar más de un
+            procesador para la ejecución del programa de aplicación. <br />
+            <br />
+            Las CPU de multiprocesamiento se clasifican de la siguiente manera
+            (Clasificación de Flynn)
+            <ul>
+              <li>
+                SISO - (Single Instruction, Single Operand) Computadoras
+                Monoprocesador.
+              </li>
+              <li>
+                SIMO - (Single Instruction, Multiple Operand) Procesadores
+                vectoriales, Exenciones MMX.
+              </li>
+              <li>
+                MISO - (Multiple Instruction, Single Operand) No implementado.
+              </li>
+              <li>
+                MIMO - (Multiple Instruction, Multiple Operand) Sistemas SMP,
+                Clusters, GPUs.
+              </li>
+            </ul>
+            <ul>
+              Procesadores Digitales de Señales (DSP)
+              <li>
+                Son procesadores especializados en el procesamiento de señales
+                tales como audio, radar, sonar, radio, etc.
+              </li>
+              <li>
+                Cuentan con instrucciones tipo vectorial que los hace muy aptos
+                para dicha aplicación.
+              </li>
+              <li>
+                Suelen utilizarse en conjunto con un microcontrolador en
+                dispositivo como reproductores de audio, reproductores de dvd y
+                Blu-Ray, teléfonos celulares, sistemas de entretenimiento,
+                adquisición de datos.
+              </li>
+              <br />
+              <br />
+              Procesadores Digitales de Señales (DSP)
+              <li>
+                Son procesadores especializados en el procesamiento de señales
+                tales como audio, radar, sonar, radio, etc.
+              </li>
+              <li>
+                Cuentan con instrucciones tipo vectorial que los hace muy aptos
+                para dicha aplicación.
+              </li>
+              <li>
+                Suelen utilizarse en conjunto con un microcontrolador en
+                dispositivo como reproductores de audio, reproductores de dvd y
+                Blu-Ray, teléfonos celulares, sistemas de entretenimiento,
+                adquisición de datos.
+              </li>
+            </ul>
+            <br />
+            <br />
+            <h4>Sistemas SMP (Symetric Multiprocesesors)</h4>
+            Varios procesadores comparten la misma memoria principal y
+            periféricos I/O. Normalmente conectados por un bus común. Son
+            simétricos ya que todos tienen derechos similares en cuanto al
+            acceso a la memoria y periféricos y ambos son administrados por el
+            Sistema Operativo.
+            <h4>Clusters</h4>
+            Son conjuntos de computadoras independientes conectadas en una LAN o
+            por un bus de interconexión y que trabajan cooperativamente para
+            resolver un problema. Es clave en su funcionamiento contar con un
+            Sistema Operativo y programas de aplicación capaces de distribuir el
+            trabajo entre las computadoras de red.
+            <h4>GPU</h4>
+            Diseñados originalmente para el procesamiento de Gráficos, con
+            múltiples procesadores vectoriales sencillos, compoartiendo la misma
+            memoria, la cual puede ser accedida por el CPU.
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="d-flex">
+        <div class="artacomodo col-2">
+          <article>
+            <h1 id="1.2 Análisis de componentes">
+              1.2 Analisis de componentes
+            </h1>
+            <h2 id="1.2.1 Arquitecturas">1.2.1 Arquitectura</h2>
+            Además de las Arquitecturas clásicas mencionadas anteriormente, en
+            la actualidad han aparecido Arquitecturas híbridas entre la Von
+            Newman y la Harvard, buscando conservar la flexibilidad, pero
+            mejorando el rendimiento.
+            <h4>¿Que es el CISC?</h4>
+            CISC es un tipo de arquitectura de computadoras que promueve el uso
+            de gran número de instrucciones, permitiendo operaciones complejas
+            entre operandos situados en memoria o en registros internos.
+            <h4>¿Que es el RISC?</h4>
+            conjunto de instrucciones reducidas (Reduced Instruction Set
+            Computer) son procesadores que están diseñados para ejecutar un
+            número reducido de tipos de instrucciones que les permite operar a
+            una velocidad más elevada. La arquitectura RISC principalmente
+            requiere menos cantidad de hardware y una mayor flexibilidad de
+            construcción.
+
+            <h2 id="1.2.1.1 Unidad Central de Procesamiento (CPU)">
+              1.2.1.1 Unidad Central de Procesamiento (CPU)
+            </h2>
+            <ul>
+              <h4>¿Que es el CPU?</h4>
+              <li>Es el cerebro de cada ordenador</li>
+              <li>Componente vital conocido como procesador</li>
+              <li>
+                Se encarga de procesar todas las instrucciones del dispositivo.
+              </li>
+              <li>
+                Cuanto mas potente sea, mas rapido podra hacer las operaciones.
+              </li>
+              <li>
+                Ordenador tiene CPU y el telefono tiene SoC, estos suelen poder
+                hacer mas que el CPU estandar.
+              </li>
+              <h4>¿Pära que y como sirve el CPU?</h4>
+              <li>
+                Ejecuta una secuencia de instrucciones y procesa los datos de
+                las mismas.
+              </li>
+              <li>
+                Se encarga de leer datos e instrucciones para realizar cada una
+                de las tareas (decodifica los datos y los divide).
+              </li>
+              <li>
+                Las instrucciones no se realizan en orden una tras otra, el CPU
+                trabaja con varias a la vez.
+              </li>
+              <h4>Componentes</h4>
+              <li>
+                Unidad de control: Gestiona el procesamiento de instrucciones.
+              </li>
+              <li>
+                Registros: Ubicaciones de almacenamiento de memoria de alta
+                velocidad dentro del CPU.
+              </li>
+              <li>ALU: Realiza operaciones aritméticas básicas.</li>
+              <li>
+                Unidad de gestión de memoria: Bus, gestionan las tareas
+                relacionadas con la memoria, interacción de CPU y RAM.
+              </li>
+              <li>
+                Reloj: Se basa en una señal para sincronizar sus operaciones
+                internas (lo coordina).
+              </li>
+              <li>Núcleo: Interpreta y ejecuta acciones.</li>
+              <li>
+                Memoria caché: Almacena los datos que el usuario busca con
+                frecuencia.
+              </li>
+            </ul>
+            <h2 id="1.2.1.2 Unidad Aritmética Lógica">
+              1.2.1.2 Unidad Aritmética Lógica
+            </h2>
+            <h4>¿Que es la unidad aritmetica logica?</h4>
+            Es un circuito digital que realiza operaciones lógicas y aritméticas
+            entre dos operados de n bits.
+            <h4>Estructura de una computadora digital</h4>
+            En una computadora digital, la unidad aritmético lógica se localiza
+            en la CPU (Unidad Central de Proceso) y realiza operaciones con los
+            datos que provienen de la memoria o de dispositivos externos.
+
+            <h2 id="1.2.1.3 Registros">1.2.1.3 Registros</h2>
+            <h4>¿Que son los registros?</h4>
+            Un registro es una memoria que esta ubicada en el procesador y se
+            encuentra en el nivel más alto en la jerarquía de memoria, por lo
+            tanto tiene una alta velocidad pero con poca capacidad para
+            almacenar datos que va desde los 4 bits hasta los 64 bits
+            dependiendo del procesador que se utilice. Los datos que almacena
+            son los que se usan frecuentemente. <br />
+            <br />
+            El número de registros del CPU es limitado, ya que las compuertas
+            lógicas del circuito integrado se emplean para implementar las
+            secuencias de control de estas instrucciones especiales.
+            <h2 id="1.2.1.4 Buses">1.2.1.4 Buses</h2>
+            Son canales de comunicación que permiten la transferencia de datos
+            entre diferentes componentes del sistema. Estos componentes pueden
+            ser la CPU, la memoria, los dispositivos de almacenamiento, las
+            tarjetas de expansión, etc.
+            <ul>
+              <h4>Tipos de buses</h4>
+              <li>
+                Bus del Sistema: Es el principal canal de comunicación en una
+                computadora y conecta la CPU con la memoria RAM.
+              </li>
+              <li>
+                Bus de Datos: Facilita la transferencia de datos entre la unidad
+                central de procesamiento (CPU), la memoria y otros dispositivos
+                conectados al sistema.
+              </li>
+              <li>
+                Bus de Dirección: Se utiliza para especificar la ubicación de la
+                memoria o de los registros en la CPU a los que se desea acceder.
+              </li>
+              <li>
+                Bus de Control: Se encarga de transmitir señales de control que
+                coordinan y regulan las operaciones dentro del sistema. Trabaja
+                en conjunto con los buses de datos y de direcciones para
+                garantizar que las operaciones se realicen de manera eficiente y
+                en el orden adecuado.
+              </li>
+              <li>
+                Bus de E/S (Entrada/Salida): Es una ruta de comunicación que
+                conecta la CPU con los dispositivos externos, facilitando la
+                entrada y salida de datos en una computadora.
+              </li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="d-flex">
+        <div class="artacomodo col-2">
+          <article>
+            <h2 id="1.2.2 Memorias">1.2.2 Memorias</h2>
+            Es un dispositivo que puede mantenerse en por lo menos dos estados
+            estables por un cierto periodo de tiempo. Cada uno de estos estados
+            estables puede utilizarse para representar un bit. A un dispositivo
+            con la capacidad de almacenar por lo menos un bit se le conoce como
+            celda básica de memoria. Un dispositivo de memoria completo se forma
+            con varias celdas básicas y los circuitos asociados para poder leer
+            y escribir dichas celdas básicas, agrupadas como localidades de
+            memoria que permitan almacenar un grupo de N bits.
+            <h4>
+              <img src="imagenes/imagen4.jpg" alt="memoriaa" class="imagen" />
+            </h4>
+
+            <h4 id="1.2.2.1 Conceptos básicos del manejo de memoria">
+              1.2.2.1 Conceptos básicos del manejo de memoria
+            </h4>
+            La gestión de memoria en un dispositivo informático implica asignar
+            memoria a los programas que la necesitan y es crucial para el
+            funcionamiento eficiente de la computadora. Los sistemas de memoria
+            virtual separan las direcciones de memoria usadas por un proceso de
+            las direcciones físicas reales, lo que permite la separación de
+            procesos y aumenta la memoria efectiva mediante la paginación. La
+            administración de memoria optimiza el uso de la memoria disponible,
+            organizando los procesos y programas de manera efectiva. Existen
+            técnicas para cargar programas en la memoria, como la partición fija
+            (división de la memoria en partes de igual o distinto tamaño) y la
+            partición dinámica (particiones de tamaño variable según las
+            necesidades de cada proceso).
+
+            <h4 id="1.2.2.2 Memoria principal">1.2.2.2 Memoria principal</h4>
+            La memoria del semiconductor utiliza en su arquitectura circuitos
+            integrados basados en semiconductores para almacenar información. Un
+            chip de memoria de semiconductor puede contener millones de
+            minúsculos transistores o condensadores. Existen memorias de
+            semiconductor de ambos tipos: volátiles y no volátiles. En las
+            computadoras modernas, la memoria principal consiste casi
+            exclusivamente en memoria de semiconductor volátil y dinámica,
+            también conocida como memoria dinámica de acceso aleatorio o más
+            comúnmente RAM (Random Access Memory).
+
+            <h4 id="1.2.2.3 Memoria caché">1.2.2.3 Memoria caché</h4>
+            Es la memoria de acceso rápido de una computadora, que guarda
+            temporalmente las últimas informaciones procesadas. Es un búfer
+            especial de memoria que poseen las computadoras, que funciona de
+            manera similar a la memoria principal, pero es de menor tamaño y de
+            acceso más rápido.
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="d-flex">
+        <div class="artacomodo col-2">
+          <article>
+            <h2 id="1.2.3 Manejo de entrada/salida">
+              1.2.3 Manejo de entrada/salida
+            </h2>
+            <ul>
+              <li>
+                Una computadora no puede estar formada sólo por la CPU y la
+                memoria.
+              </li>
+              <li>
+                Para darle alguna utilidad debe comunicarse con el mundo
+                exterior a través del subsistema de entrada/salida (I/O
+                input/output).
+              </li>
+            </ul>
+
+            <h4 id="1.2.3.1 Modulos de entrada/salida">
+              1.2.3.1 Modulos de entrada/salida
+            </h4>
+            Los módulos son las interfaces que tiene la computadora con el
+            exterior. Su obetivo es facilitar las operaciones de E/S entre los
+            periféricos y la memoria o los registros del procesador. Un módulo
+            de E/S se conecta con el procesador a través de un bus. Los datos
+            que se transfieren se almacenan temporalmente en un registro de
+            datos.
+
+            <h4 id="1.2.3.2 entrada/salida programada">
+              1.2.3.2 Entrada/salida programada
+            </h4>
+            La entrada-salida programada (también entrada / salida programada ,
+            E / S programada , PIO ) es un método de transmisión de datos , a
+            través de entrada / salida (E / S), entre una unidad central de
+            procesamiento (CPU) y un dispositivo periférico , como un adaptador
+            de red o un dispositivo de almacenamiento Parallel ATA (PATA,
+            anteriormente AT Attachment (ATA)). Cada transferencia de elementos
+            de datos se inicia mediante una instrucción en el programa, que
+            involucra a la CPU para cada transacción. Por el contrario, en las
+            operaciones de acceso directo a memoria (DMA), la CPU no participa
+            en la transferencia de datos. El término puede referirse a E / S
+            mapeadas en memoria (MMIO) o E / S mapeadas en puertos (PMIO). PMIO
+            se refiere a transferencias que utilizan un espacio de direcciones
+            especial fuera de la memoria normal, al que generalmente se accede
+            con instrucciones dedicadas, comoEN y FUERAen arquitecturas x86.
+            MMIO [1] se refiere a transferencias a dispositivos de E / S que
+            están mapeados en el espacio de direcciones normal disponible para
+            el programa. PMIO fue muy útil para los primeros microprocesadores
+            con espacios de direcciones pequeños, ya que los dispositivos de E /
+            S no consumían el valioso recurso.
+
+            <h4 id="1.2.3.3 entrada/salida mediante interrupciones">
+              1.2.3.3 entrada/salida mediante interrupciones
+            </h4>
+            Esta técnica pretende evitar que el procesador pare o haga trabajo
+            improductivo, mientras que espera a que el periférico esté preparado
+            para hacer una nueva operación. El hardware de la computadora,
+            necesita tener un conjunto de líneas de control del bus del sistema
+            y de petición de interrupción.
+
+            <h4 id="1.2.3.4 Acceso directo a memoria">
+              1.2.3.4 Acceso directo a memoria
+            </h4>
+            El DMA permite que el dispositivo de rred mueva los datos del
+            paquete directamente a la memoria del sistema, reduciendo la
+            utilizacion del CPU. Sin embargo, la frecuencia y los intervalos
+            aleatorios en los cuales los paquetes llegan no permiten que el
+            sistema ingrese un estado de energía más bajo. El coalescentes DMA
+            permite que el NIC recoja los paquetes antes de que inicie un evento
+            DMA. Esto puede aumentar la latencia de la red, pero también aumenta
+            las probabilidades de que el sistema consuma menos energía.
+            <h4>
+              <img src="imagenes/imagen5.jpg" alt="memoriaAcces" class="imagen" />
+            </h4>
+            <h4 id="1.2.3.5 Canales y procesadores de entrada/salida">
+              1.2.3.5 Canales y procesadores de entrada/salida
+            </h4>
+            EL canal de E/S es una extensión del bus del 8088. Este canal
+            contiene un bus de datos bidireccinal de 8 bits, 20 líneas de
+            dirección, 6 niveles de interrupción, líneas de control para las
+            operaciones de lectura y escritura para la memoria y la E/S, líneas
+            de control de 3 canales de DMA, y líneas de control para el tiempo
+            de refresco de memoria. Los canales de E/S proporcionan una línea
+            Ready para permitir operaciones con dispositivos de memoria o de E/S
+            lentos. Cuando la línea no está activada por un dispositivo, el
+            procesador genera ciclos de lectura y esritura a memoria que toman
+            cuatro ciclos de 210 ns (esto es, 840 ns) por byte. Todos los ciclos
+            de lectura y escritura a E/S generados por el procesador requieren
+            de cinco ciclos de 210 ns de reloj (1.05 ms) por byte. Todas las
+            transferencias DMA requieren de cinco ciclos de reloj para un ciclo
+            de tiempo de 1.05 ms por byte. Los ciclos de reloj se presentan
+            aproximadamente cada 15 m sec y requieren de cinco ciclos de reloj.
+            Los dispositivos de E/S están direccionados utilizando un mapeo de
+            E/S con el espacio de direccionamiento. El canal proporciona a las
+            tarjetas de E/S 512 direcciones de dispositivos.
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <h4>Alumna Alejandra Muñoz Ríos</h4>
+      <nav class="style1 efecto bloque">
+        <a href="#">Regresar arriba</a>
+        <a
+          href="https://drive.google.com/drive/folders/1V86xLtCIPa5StEz9SxGC2eQmZBswaHoP?usp=sharing"
+          >Prácticas</a
+        >
+        <a href="https://saltillo.tecnm.mx">Tecnológico de Saltillo</a>
+        <a href="https://www.tecnm.mx">Tecnológico Nacional de México</a>
+      </nav>
+    </footer>
+  </body>
+</html>
